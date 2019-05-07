@@ -3,7 +3,6 @@
 import os
 import sys
 
-#Command utility for project management
 
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'practice.settings')
