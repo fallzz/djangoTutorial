@@ -1,3 +1,7 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+
 {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}
@@ -7,3 +11,10 @@
 {% else %}
     <p>No polls are available.</p>
 {% endif %}
+
+<br><br><br>
+<footer>
+    <p>Background image source</p>
+    <p>"Voting app index page," Django tutorial, n.d. 수정, 2019년 05월 08일 접속, </p>
+    <a href = "https://giphy.com/gifs/vote-voting-baddies-3o6EhEtPgpxIsoKESY/links">https://giphy.com/gifs/vote-voting-baddies-3o6EhEtPgpxIsoKESY/</a>
+</footer>
